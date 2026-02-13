@@ -560,7 +560,7 @@ class LongTable(Tabular):
 
         content = ""
         if self.caption is not None:
-            content += self.caption.dumps() + "%\n"
+            content += self.caption.dumps() + "\\\\%\n"
         content += super().dumps_content(**kwargs)
         return NoEscape(content)
 
